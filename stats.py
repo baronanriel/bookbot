@@ -25,9 +25,9 @@ def compile_report(char_dict):
     report_data.sort(reverse=True, key=sort_on)
     return(report_data)
 
-def generate_report(word_count, report_data):
+def generate_report(word_count, report_data, book_title):
     print("============ BOOKBOT ============")
-    print("Analyzing book found at books/frankenstein.txt...")
+    print(f"Analyzing {book_title}...")
     print("----------- Word Count ----------")
     print(f"Found {word_count} total words")
     print("----------- Character Count ----------")
